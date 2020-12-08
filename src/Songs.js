@@ -10,7 +10,7 @@ export default function Songs(props){
             <Card.Description>{song.album}</Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <Button>Delete Song</Button>
+            <Button onClick={() => props.deleteSong(song.id)}>Delete Song</Button>
             <Button>Edit Song</Button>
           </Card.Content>
         </Card>
